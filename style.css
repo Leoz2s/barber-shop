@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bc-primary: burlywood;
+  --bc-secondary: antiquewhite;
+
+}
+
+body {
+  font-size: 1.6rem;
+
+  background-color: var(--bc-primary);
+  
+  display: grid;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+main {
+  padding: 4rem;
+  background-color: var(--bc-secondary);
+
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+
+  width: 100vw;
+}
+
+#buttons-group {
+  display: flex;
+  gap: 4rem;
+}
+
+.button-wrap {
+  display: flex;
+  gap: 2rem;
+
+  padding: 1rem;
+  border-radius: .9rem;
+}
+
+#whatsapp-button {
+  background-color: yellowgreen;
+}
+
+#instagram-button {
+  background-color: mediumvioletred;
+}
+
+footer {
+  padding: 1rem;
+
+  justify-self: center;
+}
+
