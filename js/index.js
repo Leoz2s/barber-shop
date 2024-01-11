@@ -1,6 +1,8 @@
-const buttons = document.querySelector("#buttons-group");
+const whatsAppButton = document.querySelector("#whatsapp-button");
+const instagramButton = document.querySelector("#whatsapp-button");
 
-buttons.addEventListener("click", clickReaction);
+whatsAppButton.addEventListener("click", clickReaction);
+instagramButton.addEventListener("click", clickReaction);
 
 function clickReaction() {
   console.log("Hello!");

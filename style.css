@@ -9,11 +9,22 @@
 
   --bc-primary: burlywood;
   --bc-secondary: antiquewhite;
+  --bc-button-whatsapp: yellowgreen;
+  --bc-button-instagram: mediumvioletred;
+  --ff-primary: 'Lato', sans-serif;
+  --fc-primary: #000;
+  --fc-h1: brown;
+  --fc-buttons: #fff;
+
+  --fs-h1: 6rem;
+  --fs-text: 2rem;
 
 }
 
 body {
   font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  color: var(--fc-primary);
 
   background-color: var(--bc-primary);
   
@@ -23,55 +34,107 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--fc-primary);
 }
 
 header {
   padding: 1rem;
 
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav {
+header img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 99rem;
+
+  margin-block: 1rem;
+}
+
+header nav {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
+
+  font-weight: bold;
+  font-size: var(--fs-text);
+
+  margin-block: 1rem;
+}
+
+header nav a:hover {
+  color: var(--fc-h1);
 }
 
 main {
-  padding: 4rem;
+  padding-block: 2rem;
   background-color: var(--bc-secondary);
 
   display: grid;
   justify-content: center;
+  justify-items: center;
   gap: 2rem;
 
   width: 100vw;
 }
 
+main img {
+  height: 50rem;
+  width: 30rem;
+
+  border-radius: 2rem;
+}
+
+main h1 {
+  font-size: var(--fs-h1);
+  color: var(--fc-h1);
+}
+
+main p {
+  font-size: var(--fs-text);
+
+  justify-self: center;
+
+  padding-inline: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 #buttons-group {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 4rem;
 }
 
 .button-wrap {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 
   padding: 1rem;
+  width: 24rem;
+  height: 7rem;
   border-radius: .9rem;
 }
-
-#whatsapp-button {
-  background-color: yellowgreen;
+.button-wrap i {
+  font-size: 3.5rem;
 }
-
+#whatsapp-button {
+  background-color: var(--bc-button-whatsapp);
+}
 #instagram-button {
-  background-color: mediumvioletred;
+  background-color: var(--bc-button-instagram);
 }
 
 footer {
   padding: 1rem;
 
   justify-self: center;
-}
 
+  font-size: var(--fs-text);
+  font-weight: bold;
+}
