@@ -1,0 +1,16 @@
+{
+  "name": "barber-shop",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Leo",
+  "license": "ISC",
+  "description": "Barber shop application."
+}
