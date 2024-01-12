@@ -1,9 +1,60 @@
 <main>
-  <form action="">
-    <div class="input-wrap">
-      <label for="">Seu nome:</label>
-      <input type="text" name="" id="">
-    </div>
+  <h2>Marque um corte pelo formulário:</h2>
 
+  <form action="" id="booking-form">
+    <fieldset>
+      <legend>Preencha todos os campos abaixo para marcar seu corte:</legend>
+
+      <div class="input-wrap">
+        <label for="">Seu nome:</label>
+        <input type="text" name="" id="" minlength="3" required>
+      </div>
+
+      <div class="input-wrap">
+        <label for="">Barbeiro:</label>
+        <select name="" id="barber" required>
+          <option value="">Bruno</option>
+          <option value="">Carlos</option>
+          <option value="">Gabriel</option>
+        </select>
+      </div>
+
+      <div class="col-2-input">
+        <div class="input-wrap">
+          <label for="">Data:</label>
+          <input type="date" name="" id="" required>
+        </div>
+  
+        <div class="input-wrapper">
+          <label for="">Hora:</label>
+          <input type="time" name="" id="">
+        </div>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="">Seu número de celular:</label>
+        <input type="number" name="" id="">
+      </div>
+    </fieldset>
+
+    <input type="submit" value="Marcar corte" form="booking-form" class="booking-submit-button">
   </form>
+
+  <h2>Ou entre em contato diretamente conosco:</h2>
+
+  <div id="buttons-group">
+    <a href="#" target="_blank">
+      <div class="button-wrap" id="whatsapp-button">
+        <i class="ph ph-whatsapp-logo" alt="WhatsApp logo"></i>
+        <h2>WhatsApp</h2>
+      </div>
+    </a>
+
+    <a href="#" target="_blank">
+      <div class="button-wrap" id="instagram-button">
+        <i class="ph ph-instagram-logo" alt="Instagram logo"></i>
+        <h2>Instagram</h2>
+      </div>
+    </a>
+  </div>
 </main>

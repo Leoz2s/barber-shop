@@ -9,8 +9,8 @@
 
   --bc-primary: burlywood;
   --bc-secondary: antiquewhite;
-  --bc-button-whatsapp: yellowgreen;
-  --bc-button-instagram: mediumvioletred;
+  --bc-button-whatsapp: linear-gradient(260deg, hsl(140, 89%, 25%) 0%, hsl(133, 89%, 50%) 100%);
+  --bc-button-instagram: linear-gradient(260deg, hsl(322, 81%, 43%) 0%, hsl(288, 80%, 30%) 100%);
   --ff-primary: 'Lato', sans-serif;
   --fc-primary: #000;
   --fc-h1: brown;
@@ -18,7 +18,6 @@
 
   --fs-h1: 6rem;
   --fs-text: 2rem;
-
 }
 
 body {
@@ -51,6 +50,8 @@ header img {
   border-radius: 99rem;
 
   margin-block: 1rem;
+
+  box-shadow: 0px 10px 107px -10px rgba(0,0,0,0.75);
 }
 
 header nav {
@@ -86,6 +87,8 @@ main img {
   width: 30rem;
 
   border-radius: 2rem;
+
+  box-shadow: 0px 10px 137px -10px rgba(0,0,0,0.75);
 }
 
 main h1 {
@@ -119,22 +122,29 @@ main p {
   width: 24rem;
   height: 7rem;
   border-radius: .9rem;
+
+  border: 1px solid #000;
+
+  cursor: pointer;
 }
 .button-wrap i {
   font-size: 3.5rem;
 }
 #whatsapp-button {
-  background-color: var(--bc-button-whatsapp);
+  background-image: var(--bc-button-whatsapp);
 }
 #instagram-button {
-  background-color: var(--bc-button-instagram);
+  background-image: var(--bc-button-instagram);
 }
 
 footer {
   padding: 1rem;
+  width: 100vw;
 
-  justify-self: center;
+  text-align: center;
 
   font-size: var(--fs-text);
   font-weight: bold;
+
+  box-shadow: 0px -8px 46px -12px rgba(0,0,0,0.75);
 }
